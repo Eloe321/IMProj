@@ -1,0 +1,82 @@
+.PLANX, .cont {
+    justify-content: center;
+    align-items: center;
+    font-family: 'Pacifico', cursive;
+    font-size: 90px;
+    background: linear-gradient(to bottom, #3C8CCC, #95C0E3);
+}
+
+.carousel-item{
+    max-height: 800px;
+}
+#logInWeb{
+    padding: 20px 40px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    right: 35%;
+    top: 25%;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    font-family: 'Jaldi', sans-serif;
+    font-size: 20px;
+    color: white;
+    backdrop-filter: blur(20px);
+    background-color: rgba(255, 255, 255, 0.1);
+
+}
+#logBut{
+    height: 50px;
+    border-radius: 5px;
+    margin: 10px 0;
+    border: none;
+}
+.form-floating input {
+    backdrop-filter: blur(100px);
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+}
+#registerWeb{
+    padding: 20px 40px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    width: 500px;
+    height: 700px;
+    position: absolute;
+    right: 35%;
+    top: 28%;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+
+    font-size: 15px;
+    color: white;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.form-control:focus {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    backdrop-filter: blur(10px);
+}
+.form-floating {
+    position: relative;
+}
+
+.password-toggle {
+    position: absolute;
+    top: 50%;
+    right: 10px; /* Adjust as needed */
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.password-toggle img {
+    width: 30px;
+    height: 30px;
+}
+
