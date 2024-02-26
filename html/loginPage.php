@@ -31,7 +31,7 @@
             <button type="button" id ="logBut"><b>Log In</b></button>
         </div>
 
-        <p style="margin-top: 10px;">Don't Have an Account? <a href="#" style="color: white;">Register Here!</a></p>
+        <p style="margin-top: 10px;">Don't Have an Account? <a href="registerPage.php" style="color: white;">Register Here!</a></p>
 
     </div>
 </body>

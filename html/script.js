@@ -16,12 +16,11 @@ function togglePass() {
         pass.type = "password";
     }
 }
-function OpenLog(){
-    window.close();
-    window.open("loginPage.php", "_self");
+$("#OpenLog").click(function (){
+    window.location.href = "loginPage.php";
+});
+$("#OpenReg").click(function(){
 
-}
-function OpenReg(){
-    window.close();
-    window.open("registerPage.php", "_self");
-}
+    window.location.href = "registerPage.php";
+
+});

@@ -41,7 +41,7 @@
         <button class="btn btn-primary" type="button">Sign Up</button>
 
     </div>
-    <a href = "#">Already Have An Account?</a>
+    <a href = "loginPage.php">Already Have An Account?</a>
     </div>
 </body>
 <script src = "script.js"></script>
