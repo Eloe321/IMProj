@@ -24,21 +24,21 @@
                 <div class="loginFields">
                     <div class="loginInput">
                         <label for="registerName" style="font-family: Playfair Display">Name</label>
-                        <input type="text" class="htmlForm-control loginTextField" id="loginUsername" placeholder="What shall we call you" />
+                        <input type="text" class="htmlForm-control loginTextField" name="registerUsername" placeholder="What shall we call you" />
                     </div>
                     <div class="loginInput">
                         <label for="registerEmail" style="font-family: Playfair Display">Email</label>
-                        <input type="text" class="htmlForm-control loginTextField" id="loginUsername" placeholder="Enter your email" />
+                        <input type="text" class="htmlForm-control loginTextField" name="registerUsername" placeholder="Enter your email" />
                     </div>
                     <div class="loginInput">
                         <label for="registerPassword" style="font-family: Playfair Display">Password</label>
-                        <input type="password" class="htmlForm-control loginTextField" id="loginPassword" placeholder="*******" />
+                        <input type="password" class="htmlForm-control loginTextField" name="registerPassword" placeholder="*******" />
                         <p>Must be atleast 8 characters</p>
                     </div>
                 </div>
 
                 <div class="loginButtons">
-                    <button type="button" class="loginBtn" style="font-family: Playfair Display">Register</button>
+                    <button type="button" class="loginBtn" style="font-family: Playfair Display" name="registerBtn">Register</button>
                 </div>
             </form>
             <p style="font-family: Playfair Display">Been here before? <a href="loginPage.php" style="color: black; text-decoration: none;">Log in</a></p>
@@ -49,3 +49,7 @@
 </body>
 
 </html>
+
+<?php
+    include ("register.php")
+?>

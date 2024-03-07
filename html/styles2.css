@@ -49,10 +49,6 @@
     opacity: 0.8;
 }
 
-.loginTextField:hover {
-    background: 1px black;
-}
-
 .loginFields {
     display: flex;
     flex-direction: column;
