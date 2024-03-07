@@ -1,49 +1,51 @@
-
 <html lang="en">
+
 <head>
-    <link href="styles.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login Page</title>
+    <link href="styles2.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
-    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-    <title>Register Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 </head>
-<body style="background-image: url('https://imgur.com/dc7Xg05.jpg'); background-size: 100%; background-position: 50% 45%">
-<div id = "registerWeb">
-    <header><p>TrekkerTracker</p></header>
-    <hr>
-        <p>Sign Up</p>
-    <div class="form-floating mb-3">
-        <input type="email" class="form-control" id="RegEmail" placeholder="Email Address" required>
-        <label for="RegEmail" >Email Address</label>
-    </div>
-    <div class="form-floating mb-3">
-        <input type="text" class="form-control" id="RegFname" placeholder="First Name" required>
-        <label for="RegFname">First Name</label>
-    </div>
-    <div class="form-floating mb-3">
-        <input type="text" class="form-control" id="RegLname" placeholder="Last Name" required>
-        <label for="RegLname">Last Name</label>
-    </div>
 
-    <div class="form-floating">
-        <input type="password" class="form-control" id="regPass" placeholder="Password" required>
-        <label for="regPass" class = "forInp">Password</label>
-        <div class="password-toggle" onclick="togglePass()">
-            <img src="https://cdn-icons-png.freepik.com/256/709/709612.png?uid=R115184418&ga=GA1.1.475352177.1708440339&"
-                 alt="Show Password">
+<!-- <body class="loginBody" style="align-items: center; background-position: 50% 60%; background-size: 77%;background-image: url('https://images.unsplash.com/photo-1543797414-a0c3ad076f7c?q=80&w=1933&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');"> -->
+
+<body class="loginBody">
+<main class="loginMain">
+    <div class="loginLeft">
+        <div class="login">
+            <div class="loginMessage">
+                <p class="registerText" style="font-family: Playfair Display">Create an account</p>
+                <p style="font-size: 17px; font-weight: 200; opacity: 0.5;text-align: center;">Always remember to drink water</p>
+            </div>
+            <form class="loginForm">
+                <div class="loginFields">
+                    <div class="loginInput">
+                        <label for="registerName" style="font-family: Playfair Display">Name</label>
+                        <input type="text" class="htmlForm-control loginTextField" id="loginUsername" placeholder="What shall we call you" />
+                    </div>
+                    <div class="loginInput">
+                        <label for="registerEmail" style="font-family: Playfair Display">Email</label>
+                        <input type="text" class="htmlForm-control loginTextField" id="loginUsername" placeholder="Enter your email" />
+                    </div>
+                    <div class="loginInput">
+                        <label for="registerPassword" style="font-family: Playfair Display">Password</label>
+                        <input type="password" class="htmlForm-control loginTextField" id="loginPassword" placeholder="*******" />
+                        <p>Must be atleast 8 characters</p>
+                    </div>
+                </div>
+
+                <div class="loginButtons">
+                    <button type="button" class="loginBtn" style="font-family: Playfair Display">Register</button>
+                </div>
+            </form>
+            <p style="font-family: Playfair Display">Been here before? <a href="loginPage.php" style="color: black; text-decoration: none;">Log in</a></p>
         </div>
     </div>
-    <input type="checkbox" id ="checkiReg">
-    <label for="checkiReg">I agree to the Terms and Conditions stated, and the Privacy
-        Policy for membership</label>
-    <div class="d-grid gap-2">
-        <button class="btn btn-primary" type="button">Sign Up</button>
-
-    </div>
-    <a href = "loginPage.php">Already Have An Account?</a>
-    </div>
+    <img src="/html/assets/wallpaperflare.com_wallpaper.jpg" alt="tets" class="coolPic">
+</main>
 </body>
-<script src = "script.js"></script>
 
 </html>
