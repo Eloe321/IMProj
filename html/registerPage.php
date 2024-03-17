@@ -1,4 +1,9 @@
+<?php
+    include 'connect.php';
+?>
+
 <html lang="en">
+
 
 <head>
     <meta charset="utf-8">
@@ -49,3 +54,41 @@
 </body>
 
 </html>
+<?php
+if(isset($_POST['btnRegister'])){
+    //retrieve data from form and save the value to a variable
+    //for tbluserprofile
+    $fname=$_POST['txtfirstname'];
+    $lname=$_POST['txtlastname'];
+
+
+    //for tbluseraccount
+    $email=$_POST['txtemail'];
+    $uname=$_POST['txtpassword'];
+    $pword=$_POST['txtpassword'];
+
+    //save data to tbluserprofile
+    $sql1 ="Insert into tbluserprofile(firstname,lastname) values('".$fname."','".$lname."')";
+    mysqli_query($connection,$sql1);
+
+    //Check tbluseraccount if username is already existing. Save info if false. Prompt msg if true.
+    $sql2 ="Select * from tbluseraccount where username='".$uname."'";
+    $result = mysqli_query($connection,$sql2);
+    $row = mysqli_num_rows($result);
+    if($row == 0){
+        $sql ="Insert into tbluseraccount(emaivscladd,username,password) values('".$email."','".$uname."','".$pword."')";
+        mysqli_query($connection,$sql);
+        echo "<script>
+						alert('New record saved.');
+				  </script>";
+    }else{
+        echo "<script>
+						alert('Username already existing');
+				  </script>";
+    }
+
+
+}
+
+
+?>

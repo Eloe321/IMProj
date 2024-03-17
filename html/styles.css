@@ -7,7 +7,7 @@
 }
 
 .carousel-item{
-    max-height: 800px;
+    max-height: 959px;
 }
 #logInWeb{
     padding: 20px 40px;
@@ -127,4 +127,103 @@
 #OpenReg{
 
     right: 5%;
+}
+.carousel {
+    position: relative;
+}
+
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.carousel-item.active {
+    display: block;
+    position: relative;
+    text-align: center;
+}
+.carousel-item {
+    display: inherit;
+
+}
+
+.carousel-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+.carousel-indicators {
+    position: absolute;
+    bottom: 270px;
+    left: 40%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+.carousel-indicators button {
+    background-color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin: 0 5px;
+    padding: 0;
+}
+
+.carousel-indicators button.active {
+    background-color: #007bff;
+}
+
+.carousel-inner .carousel-item {
+    transition: opacity 1s ease-in-out;
+    position: relative;
+}
+
+.carousel-inner .carousel-item.active {
+    opacity: 1;
+    z-index: 1; /* Ensure active slide is on top */
+}
+
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev,
+.carousel-inner .carousel-item.active {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out; /* Adjust duration for fade in/out */
+    z-index: 0; /* Set z-index to ensure visibility */
+}
+
+.carousel-inner .active.carousel-item-left,
+.carousel-inner .active.carousel-item-right {
+    left: 0;
+    opacity: 0.5; /* Adjust opacity for the inactive slides */
+}
+
+.filterBut{
+    height: 40px;
+    width: 180px;
+    border-radius: 25px;
+    margin: 20px;
+    border: 1px black solid;
+}
+
+.filterBut:hover {
+    background-color: grey; /* Darker background color on hover */
+}
+
+.dropdowns{
+    flex-direction: column;
+    margin: 0 160px 0 40px;
+
+
+}
+.btn-group .btn{
+    background-color: #95C0E3; !important;
+}
+
+.labels4Plane{
+    font-size: 20px;
+    color: white;
 }

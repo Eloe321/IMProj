@@ -11,8 +11,27 @@ $(document).ready(function (){
         }
     });
 
+    let carouselElement = $('#carouselExampleInterval');
+    carouselElement.carousel({
+        interval: 5000 // milliseconds
+    });
+
+    // Handle carousel indicators
+    $('.carousel-indicators button').click(function() {
+        let targetSlide = $(this).attr('data-slide-to');
+        carouselElement.carousel('to', targetSlide);
+    });
+
+    // Update carousel indicators on slide change
+    carouselElement.on('slide.bs.carousel', function(event) {
+        let activeIndex = $(event.relatedTarget).index();
+        $('.carousel-indicators button').removeClass('active');
+        $('.carousel-indicators button[data-slide-to="' + activeIndex + '"]').addClass('active');
+    });
+
 
 });
+
 function togglePass() {
     let pass = document.getElementById("regPass");
     console.log("This is the type: " + pass);
@@ -22,14 +41,11 @@ function togglePass() {
         pass.type = "password";
     }
 }
+
 $("#OpenLog").click(function (){
     window.location.href = "loginPage.php";
 });
+
 $("#OpenReg").click(function(){
-
     window.location.href = "registerPage.php";
-
 });
-
-
-
